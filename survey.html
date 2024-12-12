@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY SURVEY</title>
+    <!-- Include Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form action="">
+
+        <div class="form-group">
+            <div class="blue-overlay">
+                <div class="survey-head">
+                    <h2>LIBRARY SURVEY</h2>
+                    <ul>
+                        <li>
+                            <h3>Help us improve your local library</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Personal Details Section -->
+                <div class="personal">
+                    <i class="fas fa-user icon" style="font-size: 48;text-align: center;"></i> <!-- Icon for Personal Details -->
+                    <h3 style="color: #FFFF;text-align: center;">Personal Details</h3>
+                   
+                   
+                    <label for="name">Name</label>
+                    <input id="name" type="text" class="input__field" placeholder="Enter your name">
+
+                    <label for="email">Email address</label>
+                    <input id="email" type="email" class="input__field" placeholder="Enter your email">
+
+                    <label for="age">Age</label>
+                    <input id="age" type="number" class="input__field" placeholder="Enter your age">
+                   
+                </div>
+
+                <!-- General Information Section -->
+                <div class="infor">
+                    <i class="fas fa-info-circle icon" style="font-size: 48;text-align: center;"></i> <!-- Icon for General Information -->
+                    <h3 style="text-align: center;">General Information</h3>
+                    <label for="how often do you visit the library" class="often">How often do you visit the Library?</label>
+                    <select name="how often do you visit the library" id="how often do you visit the library" class="field">
+                        <option value="">select</option>
+                        <option value="once a week">once a week</option>
+                        <option value="twice a week">twice a week</option>
+                        <option value="three times a week">three times a week</option>
+                        <option value="atleast four times a week">atleast four times a week</option>
+                    </select>
+
+                    <label for="visit" class="often">When you visit, are you usually able to find what you are looking for?</label>
+                    <div class="radio__container">
+                        <input type="radio" name="times" id="always" class="input__field">
+                        <label for="always" id="always">Always</label>
+                    </div>
+                    <div class="radio__container">
+                        <input type="radio" name="times" id="sometimes" class="input__field">
+                        <label for="sometimes" id="sometimes">Sometimes</label>
+                    </div>
+                    <div class="radio__container">
+                        <input type="radio" name="times" id="Rarely" class="input__field">
+                        <label for="rarely" id="rarely">Rarely</label>
+                    </div>
+                    <div class="radio__container">
+                        <input type="radio" name="times" id="never" class="input__field">
+                        <label for="never" id="never">Never</label>
+                    </div>
+
+                    <label for="reasons" class="survey__form" style="text-align: left;">Please check all the reasons you visit the library</label>
+
+                    <div class="radio__container">
+                        <input type="checkbox" name="reasons" id="to checkout" class="input__field">
+                        <label for="to checkout">to checkout</label>
+                    </div>
+
+                    <div class="radio__container">
+                        <input type="checkbox" name="reasons" id="to use computerst" class="input__field">
+                        <label for="to use computers">to use computers</label>
+                    </div>
+
+                    <div class="radio__container">
+                        <input type="checkbox" name="reasons" id="to get a book recommendation" class="input__field">
+                        <label for="to get a book recommendation">to get a book recommendation</label>
+                    </div>
+
+                    <div class="radio__container">
+                        <input type="checkbox" name="reasons" id="to do research" class="input__field">
+                        <label for="to do research">to do research</label>
+                    </div>
+
+                    <label for="message" class="often">Anything you would like to see improve?</label>
+                    <textarea name="message" id="message" class="input__field" placeholder="Type here"></textarea>
+
+                    <button>SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
